@@ -53,7 +53,7 @@ namespace WebApplication2.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error in getCountries {nameof(GetCountry)}");
+                _logger.LogError($"Error in getCountries {nameof(GetCountry)}: {ex}");
                 return StatusCode(500, "Internal server error");
             }
         }
